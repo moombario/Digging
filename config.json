@@ -1,0 +1,9 @@
+{
+    "google_vision_api_key": "YOUR_GOOGLE_VISION_API_KEY",
+    "twilio_sid": "YOUR_TWILIO_SID",
+    "twilio_auth_token": "YOUR_TWILIO_AUTH_TOKEN",
+    "twilio_phone_number": "YOUR_TWILIO_PHONE_NUMBER",
+    "user_phone_number": "YOUR_PHONE_NUMBER",
+    "alert_frequency": "hourly",
+    "min_confidence_score": 85
+}

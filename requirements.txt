@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+twilio
+google-cloud-vision
+opencv-python
+flask
