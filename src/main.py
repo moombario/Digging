@@ -1,7 +1,7 @@
 import os
 from flask import Flask, request, render_template
 from google.cloud import vision
-from sms_alerts import send_alert
+from src.sms_alerts import send_alert
 
 # Set Google Vision API credentials
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/app/service_account.json"
