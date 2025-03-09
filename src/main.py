@@ -4,7 +4,7 @@ from google.cloud import vision
 from src.sms_alerts import send_alert
 
 # Set Google Vision API credentials
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/app/service_account.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "service_account.json"
 
 # Initialize Vision API Client
 client = vision.ImageAnnotatorClient()
