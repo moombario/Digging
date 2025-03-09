@@ -4,3 +4,4 @@ twilio
 google-cloud-vision
 opencv-python
 flask
+gunicorn
