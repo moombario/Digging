@@ -4,7 +4,10 @@ from google.cloud import vision
 from sms_alerts import send_alert
 
 # Set Google Vision API credentials
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "service_account.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/app/service_account.json"
+
+# Initialize Vision API Client
+client = vision.ImageAnnotatorClient()
 
 app = Flask(__name__)
 
@@ -19,10 +22,3 @@ def test_alert():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 8080)))
-    import os
-from google.cloud import vision
-
-# Set Google Vision API credentials
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "service_account.json"
-
-client = vision.ImageAnnotatorClient()
